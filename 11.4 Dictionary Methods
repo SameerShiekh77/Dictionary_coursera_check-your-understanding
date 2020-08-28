@@ -1,0 +1,50 @@
+#dictionaries-3-1: What is printed by the following statements?
+
+mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+answer = mydict.get("cat")//mydict.get("dog")
+print(answer)
+
+answer is 2
+
+#dictionaries-3-2: What is printed by the following statements?
+
+mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+print("dog" in mydict)
+
+answer is True
+
+#dictionaries-3-3: What is printed by the following statements?
+
+mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+print(23 in mydict)
+
+answer is False
+
+#dictionaries-3-4: What is printed by the following statements?
+
+total = 0
+mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+for akey in mydict:
+   if len(akey) > 3:
+      total = total + mydict[akey]
+print(total)
+
+answer is 43 
+
+#5. Every four years, the summer Olympics are held in a different country. Add a key-value pair to the dictionary places that reflects that the 2016 Olympics were held in Brazil. Do not rewrite the entire dictionary to do this!
+
+#Answer
+
+places = {"Australia":2000, "Greece":2004, "China":2008, "England":2012}
+places['Brazil'] = 2016
+
+#6. We have a dictionary of the specific events that Italy has won medals in and the number of medals they have won for each event. Assign to the variable events a list of the keys from the dictionary medal_events. Do not hard code this.
+
+#Answer
+
+medal_events = {'Shooting': 7, 'Fencing': 4, 'Judo': 2, 'Swimming': 3, 'Diving': 2}
+events = []
+for event in medal_events:
+    events.append(event)
+print(events)    
+
